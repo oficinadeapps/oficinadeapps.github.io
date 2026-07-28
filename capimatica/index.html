@@ -5,47 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Capimatica — Tabuada das Capivaras</title>
   <style>
-    :root { color-scheme: light; }
+    :root {
+      color-scheme: light;
+      --bg: #fff7ed;
+      --surface: #ffffff;
+      --border: #fed7aa;
+      --ink: #3f2a1d;
+      --ink-soft: #7c5a3d;
+      --brand: #7c2d12;
+      --accent: #54701a;
+      --accent-soft: #8FB72D;
+      --soft-bg: #f4f7e8;
+      --code-bg: #f6efe4;
+    }
     * { box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       max-width: 720px;
       margin: 0 auto;
       padding: 32px 20px 64px;
-      line-height: 1.6;
-      color: #1f2937;
-      background: #fefce8;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--bg);
     }
-    h1 { font-size: 2.25rem; margin: 0 0 8px; color: #14532d; }
-    .lead { color: #4b5563; font-size: 1.05rem; margin-bottom: 32px; }
-    h2 { color: #14532d; margin-top: 32px; }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 6px; }
-    a { color: #14532d; }
-    nav { margin-top: 32px; padding-top: 16px; border-top: 1px solid #d1d5db; }
-    nav a {
+    .home {
       display: inline-block;
-      margin-right: 16px;
+      margin-bottom: 20px;
+      color: var(--ink-soft);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .home:hover { color: var(--accent); }
+    h1 { font-size: 2rem; margin: 0 0 8px; color: var(--brand); }
+    h2 { color: var(--brand); margin-top: 32px; font-size: 1.2rem; }
+    h3 { color: var(--accent); margin-top: 24px; font-size: 1.05rem; }
+    .lead { color: var(--ink-soft); font-size: 1.05rem; margin-bottom: 32px; }
+    .meta { color: var(--ink-soft); font-size: 0.9rem; margin-bottom: 24px; }
+    .summary {
+      background: var(--soft-bg);
+      border-left: 4px solid var(--accent-soft);
+      padding: 16px 20px;
+      border-radius: 4px;
+      margin: 24px 0;
+    }
+    .lang-divider {
+      margin: 56px 0 32px;
+      border: none;
+      border-top: 2px dashed var(--border);
+    }
+    a { color: var(--accent); }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    code {
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+    nav { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); }
+    nav a, .back {
+      display: inline-block;
+      margin-right: 12px;
       padding: 8px 16px;
-      background: #8FB72D;
-      color: white;
+      background: var(--accent);
+      color: var(--surface);
       text-decoration: none;
       border-radius: 6px;
       font-weight: 500;
     }
-    nav a:hover { background: #14532d; }
+    .back { margin-top: 40px; }
+    nav a:hover, .back:hover { background: var(--brand); }
     footer {
       margin-top: 48px;
       padding-top: 24px;
-      border-top: 1px solid #d1d5db;
+      border-top: 1px solid var(--border);
       font-size: 0.85rem;
-      color: #6b7280;
+      color: var(--ink-soft);
       text-align: center;
     }
   </style>
 </head>
 <body>
-  <a href="/" style="display:inline-block;margin-bottom:20px;color:#6b7280;text-decoration:none;font-size:0.9rem">← Oficina de Apps</a>
+  <a class="home" href="/">← Oficina de Apps</a>
 
   <h1>Capimatica</h1>
   <p class="lead">Tabuada das Capivaras — jogo educativo de matemática, 100% offline, sem anúncios.</p>
