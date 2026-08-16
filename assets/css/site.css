@@ -104,8 +104,8 @@ button, input, textarea { font: inherit; }
 }
 
 .home-hero {
-  min-height: calc(100svh - 76px);
-  padding: 72px 0 86px;
+  min-height: min(820px, calc(100svh - 76px));
+  padding: 52px 0 68px;
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(380px, .92fr);
   align-items: center;
@@ -124,7 +124,7 @@ h1, h2, h3 { color: var(--navy-deep); line-height: 1.08; text-wrap: balance; }
 h1, .display {
   margin: 0;
   font-family: "Trebuchet MS", "Aptos Display", system-ui, sans-serif;
-  font-size: clamp(3rem, 6.5vw, 6.3rem);
+  font-size: clamp(3rem, 5.4vw, 5rem);
   letter-spacing: -.065em;
 }
 .hero-copy .lead {
@@ -157,7 +157,7 @@ h1, .display {
 
 .logo-stage {
   position: relative;
-  min-height: 590px;
+  min-height: 520px;
   display: grid;
   place-items: center;
   isolation: isolate;
@@ -187,7 +187,10 @@ h1, .display {
   transform: rotate(13deg);
 }
 .logo-stage img {
-  width: min(100%, 590px);
+  width: auto;
+  height: min(68vh, 520px);
+  max-width: min(100%, 460px);
+  object-fit: contain;
   filter: drop-shadow(0 24px 24px rgba(4,43,80,.14));
   mix-blend-mode: multiply;
 }
@@ -377,7 +380,8 @@ h1, .display {
   .hero-copy { text-align: center; }
   .hero-copy .lead { margin-inline: auto; }
   .hero-copy .button-row { justify-content: center; }
-  .logo-stage { min-height: 470px; }
+  .logo-stage { min-height: 410px; }
+  .logo-stage img { height: auto; width: min(82vw, 380px); }
   .manifesto-layout, .app-hero-grid, .story-grid { grid-template-columns: 1fr; }
   .manifesto-mark { min-height: 360px; }
   .principles-grid { grid-template-columns: repeat(2, 1fr); }
@@ -396,11 +400,12 @@ h1, .display {
   .nav-links.open { display: grid; }
   .nav-links a { padding: 12px 14px; }
   .home-hero { min-height: auto; padding-bottom: 54px; }
-  h1, .display { max-width: 100%; overflow-wrap: anywhere; font-size: clamp(2.65rem, 13vw, 4.2rem); }
+  h1, .display { max-width: 100%; overflow-wrap: anywhere; font-size: clamp(2.45rem, 10.5vw, 3.25rem); }
   .hero-copy { width: 100%; min-width: 0; }
   .hero-copy .button-row { width: 100%; display: grid; grid-template-columns: 1fr; }
   .hero-copy .button { width: 100%; }
-  .logo-stage { min-height: 390px; }
+  .logo-stage { min-height: 320px; }
+  .logo-stage img { width: min(76vw, 310px); }
   .trust-inner { grid-template-columns: repeat(2, 1fr); }
   .trust-item:last-child { grid-column: 1 / -1; }
   .trust-item + .trust-item { border-left: 0; border-top: 1px dashed var(--line); }
