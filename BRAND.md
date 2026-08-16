@@ -82,7 +82,7 @@ Cada aplicativo é um retalho autônomo dentro da marca-mãe.
 - **Axológica:** água clara `#ECFEFF`, teal `#0E4F5C`, rosa-axolote `#FB7185`, ciano `#22D3EE`.
 - **Gatografia:** pergaminho `#FBF3E0`, oceano `#0B3A4A`, laranja-tabby `#F59E3C`.
 - **Acalanto:** noite `#0B1026`, superfície `#151C38`, azul-lua `#8FB4D9`.
-- **Folheia:** papel `#FAF6F0`, tinta `#2A241D`, terracota `#C25E3F`.
+- **Relicário:** papel `#FAF6F0`, tinta `#2A241D`, terracota `#C25E3F`.
 
 ## Tipografia
 
@@ -90,7 +90,7 @@ O site não depende de fontes externas ou serviços de terceiros.
 
 - **Títulos:** `Trebuchet MS`, `Aptos Display`, sistema sans-serif. Formas amigáveis e fortes, com espaçamento compacto.
 - **Texto e interface:** `Aptos`, `Segoe UI`, fontes do sistema.
-- **Folheia:** pode usar serifada de sistema em títulos editoriais para reforçar papel e memória.
+- **Relicário:** pode usar serifada de sistema em títulos editoriais para reforçar papel e memória.
 
 Princípios:
 

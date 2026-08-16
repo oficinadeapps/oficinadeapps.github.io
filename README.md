@@ -47,7 +47,7 @@ index.html          # home: seção "Jogos infantis" + seção "Apps"
 | App | Página | Privacidade |
 |---|---|---|
 | Acalanto — Sons para dormir e relaxar | [/acalanto/](https://oficinadeapps.github.io/acalanto/) | [privacy.html](https://oficinadeapps.github.io/acalanto/privacy.html) |
-| Folheia — Cadernos de fotos | [/folheia/](https://oficinadeapps.github.io/folheia/) | [privacy.html](https://oficinadeapps.github.io/folheia/privacy.html) |
+| Relicário — Cadernos de fotos (em breve) | [/relicario/](https://oficinadeapps.github.io/relicario/) | [privacy.html](https://oficinadeapps.github.io/relicario/privacy.html) |
 
 ## Site antigo (jogos-infantis.github.io)
 
