@@ -1,110 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oficina de Apps</title>
-  <meta name="description" content="Apps e jogos offline, sem anúncios e sem coleta de dados.">
-  <style>
-    :root { color-scheme: dark; }
-    * { box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 48px 20px 64px;
-      line-height: 1.6;
-      color: #e8eaf2;
-      background: #0b1026;
-    }
-    h1 {
-      font-size: 2.25rem;
-      font-weight: 300;
-      letter-spacing: 2px;
-      margin: 0 0 8px;
-    }
-    .lead { color: #a8afc9; margin: 0 0 12px; font-size: 1.05rem; }
-    .badges { color: #8b91ad; font-size: 0.9rem; margin-bottom: 44px; }
-    h2 {
-      font-size: 1.05rem;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: #8fb4d9;
-      margin: 44px 0 4px;
-    }
-    h2 + .section-lead { color: #8b91ad; font-size: 0.9rem; margin: 0 0 20px; }
-    .cards { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-    .card {
-      display: block;
-      padding: 18px 22px;
-      background: #141a38;
-      border: 1px solid #26305c;
-      border-left: 4px solid var(--accent, #8fb4d9);
-      border-radius: 10px;
-      text-decoration: none;
-      color: inherit;
-      transition: transform 0.1s, border-color 0.1s, background 0.1s;
-    }
-    .card:hover {
-      transform: translateY(-2px);
-      background: #1a2145;
-      border-color: var(--accent, #8fb4d9);
-    }
-    .card h3 { margin: 0 0 4px; font-size: 1.15rem; color: var(--accent, #e8eaf2); }
-    .card p { margin: 0; color: #a8afc9; font-size: 0.92rem; }
-    footer {
-      margin-top: 56px;
-      padding-top: 24px;
-      border-top: 1px solid #26305c;
-      font-size: 0.85rem;
-      color: #8b91ad;
-      text-align: center;
-    }
-    footer a { color: #8fb4d9; }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oficina de Apps — tecnologia para fazer o bem</title>
+  <meta name="description" content="Aplicativos gratuitos, sem anúncios, sem cadastro e sem coleta de dados. Tecnologia feita para ensinar, acalmar e cuidar.">
+  <meta name="theme-color" content="#fffaf0">
+  <meta property="og:title" content="Oficina de Apps — tecnologia para fazer o bem">
+  <meta property="og:description" content="Apps e jogos gratuitos, offline e sem coleta de dados.">
+  <meta property="og:image" content="https://oficinadeapps.github.io/assets/brand/oficina-logo-textured.png">
+  <link rel="icon" href="/assets/brand/oficina-logo-transparent.png">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script src="/assets/js/site.js" defer></script>
 </head>
 <body>
-  <h1>Oficina de Apps</h1>
-  <p class="lead">Apps e jogos feitos com calma, para funcionar offline.</p>
-  <p class="badges">Sem anúncios · Sem cadastro · Sem coleta de dados</p>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <h2>Jogos infantis</h2>
-  <p class="section-lead">Jogos educativos para crianças, offline e sem anúncios.</p>
-  <div class="cards">
-    <a class="card" href="/capimatica/" style="--accent:#8FB72D">
-      <h3>Capimatica</h3>
-      <p>Tabuada das Capivaras — matemática divertida para crianças.</p>
-    </a>
-    <a class="card" href="/coalavras/" style="--accent:#a78bfa">
-      <h3>Coalavras</h3>
-      <p>Alfabetização Coala — leitura para crianças, palavra por palavra.</p>
-    </a>
-    <a class="card" href="/axologica/" style="--accent:#fb7185">
-      <h3>Axológica</h3>
-      <p>Lógica dos canos d'água — girando tubos para guiar o axolote.</p>
-    </a>
-    <a class="card" href="/gatografia/" style="--accent:#f59e3c">
-      <h3>Gatografia</h3>
-      <p>Tower defense de geografia — gatos defendendo lugares reais do planeta.</p>
-    </a>
-  </div>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/" aria-label="Oficina de Apps — página inicial">
+        <img src="/assets/brand/oficina-logo-transparent.png" alt="" width="48" height="48">
+        <span>Oficina de Apps</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#proposito">Propósito</a>
+        <a href="#aplicativos">Aplicativos</a>
+        <a href="#como-fazemos">Como fazemos</a>
+        <a href="mailto:marcus.garcia@eutbem.com.br">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-  <h2>Apps</h2>
-  <p class="section-lead">Ferramentas do dia a dia, com os seus dados só no seu aparelho.</p>
-  <div class="cards">
-    <a class="card" href="/acalanto/" style="--accent:#8fb4d9">
-      <h3>Acalanto</h3>
-      <p>Sons para dormir e relaxar — chuva, lareira, ASMR e ruídos que embalam.</p>
-    </a>
-    <a class="card" href="/folheia/" style="--accent:#E08A66">
-      <h3>Folheia</h3>
-      <p>Cadernos de fotos — ache qualquer foto por palavras, sem nuvem e sem conta.</p>
-    </a>
-  </div>
+  <main id="conteudo">
+    <section class="shell home-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Tecnologia com propósito humano</p>
+        <h1>Tecnologia boa é tecnologia que cuida.</h1>
+        <p class="lead">Criamos aplicativos para ensinar, acalmar e proteger o que importa — gratuitos, sem anúncios, sem cadastro e sem transformar pessoas em dados.</p>
+        <div class="button-row">
+          <a class="button primary" href="#aplicativos">Conheça os aplicativos <span aria-hidden="true">↓</span></a>
+          <a class="button secondary" href="#proposito">Nossa forma de fazer</a>
+        </div>
+      </div>
+      <div class="logo-stage" aria-label="Símbolo da Oficina de Apps: uma pipa de retalhos costurada por tecnologia">
+        <img src="/assets/brand/oficina-logo-transparent.png" alt="Pipa de retalhos da Oficina de Apps, com costuras digitais e rabiola em movimento" width="1254" height="1254">
+      </div>
+    </section>
 
-  <footer>
-    Contato: <a href="mailto:marcus.garcia@eutbem.com.br">marcus.garcia@eutbem.com.br</a>
+    <aside class="trust-bar" aria-label="Compromissos da Oficina de Apps">
+      <div class="shell trust-inner">
+        <div class="trust-item"><span aria-hidden="true">●</span>Gratuitos</div>
+        <div class="trust-item"><span aria-hidden="true">⌁</span>Funcionam offline</div>
+        <div class="trust-item"><span aria-hidden="true">×</span>Sem anúncios</div>
+        <div class="trust-item"><span aria-hidden="true">○</span>Sem cadastro</div>
+        <div class="trust-item"><span aria-hidden="true">▣</span>Dados no aparelho</div>
+      </div>
+    </aside>
+
+    <section class="section" id="proposito">
+      <div class="shell manifesto-layout">
+        <div class="manifesto-mark reveal" aria-hidden="true"></div>
+        <div class="manifesto-copy reveal">
+          <p class="eyebrow">Por que existimos</p>
+          <blockquote>Nem todo aplicativo precisa disputar atenção, exibir propaganda ou recolher dados.</blockquote>
+          <p>A Oficina de Apps nasceu para explorar outro caminho: usar tecnologia — inclusive inteligência artificial — para construir coisas pequenas, úteis e honestas. Um jogo que ajuda uma criança a aprender. Um som que deixa a noite mais calma. Um jeito privado de reencontrar uma memória.</p>
+          <p>Cada aplicativo tem personalidade própria. O que costura todos eles é o mesmo compromisso: a tecnologia está aqui para servir às pessoas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compact" id="como-fazemos">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Os quatro fundamentos</p>
+          <h2>O que está costurado na marca.</h2>
+          <p>Os símbolos da pipa não são decoração. Eles registram os critérios usados para decidir o que vale a pena construir.</p>
+        </div>
+        <div class="principles-grid">
+          <article class="principle-card reveal">
+            <svg class="principle-icon" viewBox="0 0 72 72" fill="none" aria-hidden="true">
+              <circle cx="17" cy="37" r="7" stroke="currentColor" stroke-width="4"/><circle cx="50" cy="17" r="7" stroke="currentColor" stroke-width="4"/><circle cx="51" cy="54" r="7" stroke="currentColor" stroke-width="4"/><path d="M23 33 44 21M23 41l21 9M50 24v23" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 5"/>
+            </svg>
+            <h3>Inteligência que conecta</h3>
+            <p>A IA é ferramenta de criação, não finalidade. Ela aproxima ideias e amplia o que uma pequena oficina consegue fazer.</p>
+          </article>
+          <article class="principle-card reveal">
+            <svg class="principle-icon" viewBox="0 0 72 72" fill="none" aria-hidden="true">
+              <path d="M30 23 21 32a11 11 0 0 0 16 16l8-8M42 49l9-9a11 11 0 0 0-16-16l-8 8" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+              <path d="m14 18-5-5m49 41 5 5" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <h3>Acesso aberto</h3>
+            <p>Os projetos atuais são gratuitos, sem publicidade, compras escondidas ou contas obrigatórias.</p>
+          </article>
+          <article class="principle-card reveal">
+            <svg class="principle-icon" viewBox="0 0 72 72" fill="none" aria-hidden="true">
+              <path d="M17 21c15 1 20 12 20 26 0 8-5 13-11 13-7 0-11-6-8-12 4-8 16-9 28-4" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+              <path d="M55 18c-14 2-19 12-19 25 0 9 5 15 12 15 7 0 11-6 7-12-5-8-17-7-28-2" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-dasharray="8 4"/>
+            </svg>
+            <h3>Nó de cuidado</h3>
+            <p>Ensinar, acalmar e acolher. As duas fitas entrelaçadas transformam carinho em vínculo e compromisso.</p>
+          </article>
+          <article class="principle-card reveal">
+            <svg class="principle-icon" viewBox="0 0 72 72" fill="none" aria-hidden="true">
+              <path d="M36 8 59 17v17c0 15-9 24-23 30C22 58 13 49 13 34V17l23-9Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-dasharray="8 5"/><rect x="29" y="29" width="14" height="14" rx="2" stroke="currentColor" stroke-width="4"/>
+            </svg>
+            <h3>Privacidade local</h3>
+            <p>O núcleo fica protegido: nada de rastreamento. Os dados permanecem no aparelho e sob controle de quem usa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section apps-section" id="aplicativos">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Aplicativos da oficina</p>
+          <h2>Seis ideias. Um mesmo compromisso.</h2>
+          <p>Jogos que colocam o aprendizado dentro da mecânica e ferramentas que respeitam o tempo, a atenção e a privacidade.</p>
+        </div>
+        <div class="apps-grid">
+          <a class="app-card reveal" href="/capimatica/" style="--card-image:url('/assets/apps/capimatica/hero.png');--card-accent:#bde34b">
+            <img class="app-icon" src="/assets/apps/capimatica/icon.png" alt="" width="74" height="74" loading="lazy">
+            <span class="app-kicker">Matemática • 6–12 anos</span><h3>Capimatica</h3><p>Resolva contas, salve capivaras e atravesse uma progressão pedagógica por 12 biomas.</p><span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="app-card reveal" href="/coalavras/" style="--card-image:url('/assets/apps/coalavras/hero.png');--card-accent:#c9b7ff">
+            <img class="app-icon" src="/assets/apps/coalavras/icon.png" alt="" width="74" height="74" loading="lazy">
+            <span class="app-kicker">Alfabetização • leitura</span><h3>Coalavras</h3><p>Leia a palavra e salve a Coalita. Mais de 300 palavras e frases que acompanham a criança.</p><span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="app-card reveal" href="/axologica/" style="--card-image:url('/assets/apps/axologica/hero.png');--card-accent:#fb8a9b">
+            <img class="app-icon" src="/assets/apps/axologica/icon.png" alt="" width="74" height="74" loading="lazy">
+            <span class="app-kicker">Lógica • quebra-cabeça</span><h3>Axológica</h3><p>Gire os canos, conduza a água e ajude o Axel a encontrar o caminho de volta para casa.</p><span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="app-card reveal" href="/gatografia/" style="--card-image:url('/assets/apps/gatografia/hero.png');--card-accent:#ffc44e">
+            <img class="app-icon" src="/assets/apps/gatografia/icon.png" alt="" width="74" height="74" loading="lazy">
+            <span class="app-kicker">Geografia • estratégia</span><h3>Gatografia</h3><p>Leia o relevo, posicione o gato certo e dê a volta ao mundo com o explorador Atlas.</p><span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="app-card reveal" href="/acalanto/" style="--card-image:url('/assets/apps/acalanto/hero.png');--card-accent:#9fc9ef">
+            <img class="app-icon" src="/assets/apps/acalanto/icon.png" alt="" width="74" height="74" loading="lazy">
+            <span class="app-kicker">Sono • calma</span><h3>Acalanto</h3><p>Chuva, lareira, ASMR e ruídos que embalam, combinados do seu jeito para uma noite mais calma.</p><span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="app-card reveal" href="/folheia/" style="--card-image:url('/assets/apps/folheia/hero.png');--card-accent:#e8a07d">
+            <img class="app-icon" src="/assets/apps/folheia/icon.png" alt="" width="74" height="74" loading="lazy">
+            <span class="app-kicker">Fotos • memórias</span><h3>Folheia</h3><p>Organize fotos em cadernos e encontre uma memória por palavras — sem conta e sem nuvem.</p><span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell ai-panel reveal">
+        <p class="eyebrow">Humano na direção</p>
+        <h2>Feitos com inteligência artificial. Guiados por critérios humanos.</h2>
+        <p>A IA participa da oficina como uma ferramenta de projeto, programação, imagem, som e teste. As decisões sobre propósito, segurança, privacidade e experiência continuam humanas — e podem ser explicadas.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-grid">
+        <div class="footer-brand"><img src="/assets/brand/oficina-logo-transparent.png" alt="" width="74" height="74"><div><strong>Oficina de Apps</strong><span>Tecnologia para fazer o bem.</span></div></div>
+        <div class="footer-group"><h3>Explore</h3><a href="#proposito">Propósito</a><a href="#aplicativos">Aplicativos</a><a href="#como-fazemos">Fundamentos</a></div>
+        <div class="footer-group"><h3>Converse</h3><a href="mailto:marcus.garcia@eutbem.com.br">marcus.garcia@eutbem.com.br</a><a href="https://github.com/oficinadeapps">GitHub</a></div>
+      </div>
+      <div class="footer-bottom">© <span data-year>2026</span> Oficina de Apps. Feito no Brasil, sem rastreadores.</div>
+    </div>
   </footer>
 </body>
 </html>

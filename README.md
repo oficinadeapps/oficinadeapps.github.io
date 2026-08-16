@@ -1,5 +1,23 @@
 # Oficina de Apps
 
+Site institucional da Oficina de Apps e páginas públicas dos seis aplicativos.
+
+**Produção:** https://oficinadeapps.github.io/
+
+## Identidade e estrutura
+
+- `index.html` — home institucional, manifesto e catálogo;
+- `assets/css/site.css` — sistema visual compartilhado;
+- `assets/css/privacy.css` — apresentação das políticas legais;
+- `assets/js/site.js` — navegação mobile e revelações progressivas;
+- `assets/brand/` — marca oficial;
+- `assets/apps/` — ícones, artes e capturas reais dos aplicativos;
+- `<app>/index.html` — página de produto;
+- `<app>/privacy.html` — política de privacidade, mantendo as URLs usadas nas lojas;
+- `BRAND.md` — filosofia, paleta, voz e regras da identidade.
+
+O site é estático, sem dependências, cookies, analytics, trackers ou fontes externas.
+
 Site público e políticas de privacidade dos apps e jogos da **Oficina de Apps**.
 Tudo funciona offline, sem anúncios, sem cadastro e sem coleta de dados.
 
